@@ -1,0 +1,1 @@
+% TIME (GPST)            SAT  AZ(deg)  EL(deg) SNR(dBHz)   L1 MP(m)
