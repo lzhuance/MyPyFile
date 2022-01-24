@@ -1,7 +1,7 @@
 # coding=utf-8
 # !/usr/bin/env python
 """
-Program:
+Program:readobs.py
 Function:
 Author:LZ_CUMT
 Version:1.0
@@ -91,8 +91,8 @@ def data2PLDS(obs, info):
         sat = data[0]
         sys, prn = satsys(sat)
         obstype = info.obstypes[sys2index(sys)]
-        for obstype_1 in obstype:
-            if obstype_1
+        #for obstype_1 in obstype:
+           # if obstype_1
 
 
 def readobs3(obsfile):
