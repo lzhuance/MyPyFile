@@ -1,7 +1,7 @@
 # coding=utf-8
 # !/usr/bin/env python
 """
-Program:readobs.py
+Program: readobs.py
 Function:
 Author:LZ_CUMT
 Version:1.0
