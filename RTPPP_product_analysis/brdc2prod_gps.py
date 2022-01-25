@@ -528,7 +528,7 @@ def gettime(filepath, navfile, ephmode, ssrcfile):
     if ephmode == "BRDC":
         outfile = filepath + "\\" + "brd" + str(week) + str(floor(sow / 86400))
     else:
-        outfile = filepath + "\\" + ssrcfile[-12:-9].lower() + str(week) + str(floor(sow/86400))
+        outfile = filepath + "\\" + ssrcfile[-12:-9].lower() + "gggg"+str(week) + str(floor(sow/86400))
     return time, [outfile + '.sp3', outfile + '.clk']
 
 # 读取BNC SSR文件并存储至corrs
@@ -578,14 +578,14 @@ if __name__ == '__main__':
     # SSRA：广播星历 + SSR APC
     # SSRC：广播星历 + SSR COM
     ephmode = 'SSRC'  # BRDC SSRA SSRC
-    input_filepath = r"C:\Users\LZ\Desktop\rt_test1\SSR"
-    output_filepath = r"C:\Users\LZ\Desktop\rt_test1\SSR"
+    input_filepath = r"D:\GNSS_DATA\rt_test1\SSR"
+    output_filepath = r"D:\GNSS_DATA\rt_test1\SSR"
     # navfile = input_filepath + "\\" + r'BRDM00DLR_S_20213550000_01D_MN.rnx'
     navfile = input_filepath + "\\" + r'brdm3560.21p'
     atxfile = r"igs14.atx"
-    ssrclist = ["SSRC00CAS03560.21C", "SSRC00DLR03560.21C","SSRC00GFZ03560.21C",
-               "SSRC00WHU03560.21C", "SSRC00CNE03560.21C"]
-    #ssrclist = ['SSRC00CAS03550.21C']
+    #ssrclist = ["SSRC00CAS03560.21C", "SSRC00DLR03560.21C","SSRC00GFZ03560.21C",
+    #           "SSRC00WHU03560.21C", "SSRC00CNE03560.21C"]
+    ssrclist = ['SSRC00CAS03560.21C']
     #ssrcfile = filepath + "\\" + r'SSRC00CAS03550.21C'
     for ssrc in ssrclist:
         ssrcfile = input_filepath + "\\" + ssrc

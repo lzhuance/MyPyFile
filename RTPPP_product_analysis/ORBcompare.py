@@ -317,7 +317,7 @@ def process(sp3file1, sp3file2, outputfile):
     
 if __name__ == '__main__':
     start = time.perf_counter()
-    filepath = r"D:\RT-stream4\test"
+    filepath = r"D:\GNSS_DATA\rt_test1\SSR"
     sp3file1 = filepath + "\\" + r'GBM0MGXRAP_20213550000_01D_05M_ORB.SP3'
     sp3file2 = filepath + "\\" + r'cass21892.sp3'
     outputfile = filepath + "\\" + r'sp3compare0.txt'
